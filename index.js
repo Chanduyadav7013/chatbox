@@ -1,7 +1,7 @@
 const express=require('express');
 const{urlencoded,json}=require('express');
 const mongoose=require('mongoose');
-const auth=require('./middlewares/auth')
+const auth=require('./auth')
 const app=express();
 const dotenv=require('dotenv');
 dotenv.config();
