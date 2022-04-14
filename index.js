@@ -7,7 +7,6 @@ const dotenv=require('dotenv');
 dotenv.config();
 const userrouter=require('./sender')
 const receiverouter=require('./receiver');
-const connection = require('./mysql');
 mongoose.connect(process.env.mongodb_string);
 app.use(json());
 app.use(urlencoded({extended:false}));
