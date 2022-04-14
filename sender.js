@@ -4,7 +4,6 @@ const bcrypt=require('bcrypt');
 const jwt=require('jsonwebtoken');
 const { send } = require('process');
 const router=express.Router();
-const connection=require('./mysql')
 router.post("/signup",async(req,res)=>{
     try{
         // const checkuser=await users.find({email:req.body.email})
